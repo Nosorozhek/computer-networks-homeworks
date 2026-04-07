@@ -1,0 +1,42 @@
+[package]
+name = "lab05"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+lettre = "0.11"
+dialoguer = "0.11"
+chrono = "0.4"
+base64 = "0.22"
+
+[[bin]]
+name = "remote_exec_client"
+path = "src/bin/remote_exec/client.rs"
+
+[[bin]]
+name = "remote_exec_server"
+path = "src/bin/remote_exec/server.rs"
+
+[[bin]]
+name = "time_broadcast_client"
+path = "src/bin/time_broadcast/client.rs"
+
+[[bin]]
+name = "time_broadcast_server"
+path = "src/bin/time_broadcast/server.rs"
+
+[[bin]]
+name = "mail_client"
+path = "src/bin/email/main.rs"
+
+[[bin]]
+name = "smtp_client"
+path = "src/bin/smtp/main.rs"
