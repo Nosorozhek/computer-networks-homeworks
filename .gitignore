@@ -2,7 +2,6 @@
 .idea_modules/
 .vscode/
 __pycache__/
-bin/
 build/
 dist/
 lib/
