@@ -1,0 +1,24 @@
+[package]
+name = "lab06"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+dioxus = { version = "0.7.5", features = ["desktop"] }
+dialoguer = "0.11"
+
+[[bin]]
+name = "sftp_cli"
+path = "src/sftp/cli_client.rs"
+
+[[bin]]
+name = "sftp_gui"
+path = "src/sftp/gui_client.rs"
