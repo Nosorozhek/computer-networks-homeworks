@@ -1,0 +1,31 @@
+[package]
+name = "lab07"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+
+rand = "0.10.1"
+
+[[bin]]
+name = "ping_server"
+path = "src/ping/server.rs"
+
+[[bin]]
+name = "ping_client"
+path = "src/ping/client.rs"
+
+[[bin]]
+name = "heartbeat_server"
+path = "src/heartbeat/server.rs"
+
+[[bin]]
+name = "heartbeat_client"
+path = "src/heartbeat/client.rs"
