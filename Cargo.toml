@@ -8,6 +8,7 @@ members = [
     "lab06",
     "lab07",
     "lab08",
+    "lab09",
 ]
 
 [workspace.dependencies]
@@ -21,3 +22,4 @@ clap = { version = "4.5.60", features = ["derive"] }
 log = "0.4.29"
 env_logger = "0.11.9"
 anyhow = "1.0.102"
+dioxus = { version = "0.7.5", features = ["desktop"] }
