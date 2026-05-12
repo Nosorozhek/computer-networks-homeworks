@@ -1,0 +1,17 @@
+[package]
+name = "lab10"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+
+socket2 = { version = "0.5", features = ["all"] }
+
+[[bin]]
+name = "ping"
+path = "src/ping.rs"
