@@ -1,0 +1,30 @@
+[package]
+name = "lab11"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { workspace = true }
+log = { workspace = true }
+env_logger = { workspace = true }
+clap = { workspace = true }
+anyhow = { workspace = true }
+
+socket2 = { version = "0.5", features = ["all"] }
+dns-lookup = "2.0"
+
+[[bin]]
+name = "dvrp"
+path = "src/dvrp.rs"
+
+[[bin]]
+name = "ipv6_client"
+path = "src/ipv6_client.rs"
+
+[[bin]]
+name = "ipv6_server"
+path = "src/ipv6_server.rs"
+
+[[bin]]
+name = "traceroute"
+path = "src/traceroute.rs"

@@ -10,6 +10,7 @@ members = [
     "lab08",
     "lab09",
     "lab10",
+    "lab11",
 ]
 
 [workspace.dependencies]
