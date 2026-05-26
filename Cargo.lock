@@ -2953,6 +2953,20 @@ dependencies = [
 ]
 
 [[package]]
+name = "lab12"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "clap",
+ "env_logger",
+ "log",
+ "rand 0.8.5",
+ "serde",
+ "serde_json",
+ "tokio",
+]
+
+[[package]]
 name = "lazy-js-bundle"
 version = "0.7.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
